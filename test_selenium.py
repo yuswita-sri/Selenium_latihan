@@ -1,13 +1,10 @@
 from selenium import webdriver
+import time
 
-#buka browser dengan chrome
 driver = webdriver.Chrome()
-
-#Buka Google
 driver.get("https://www.google.com")
+print("Judul Halaman :", driver.title)
 
-#cetak judul halaman
-print("Judul Halaman:", driver.title)
+time.sleep(20)
 
-#tutup browser
 driver.quit()
